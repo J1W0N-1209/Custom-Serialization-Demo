@@ -5,7 +5,7 @@ import java.io.Serializable;
 
 public class OrdKdsDetail implements Serializable {
     @Serial
-    private static final long serialVersionUID = -8730520912328270794L;
+    private static final long serialVersionUID = -1375355283757862151L;
     private String changeItemNo;
     private long changeQty;
     private String cookDatetime;

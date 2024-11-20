@@ -24,7 +24,7 @@ public class    Main {
         dataTableOrderClientCmd.setTableCode("2");
         dataTableOrderServerSync.setTableIndex("20241026");
         dataTableOrderServerSync.setPosNo("2");
-        ordTableOrder.setTableIndex("6");
+        ordTableOrder.setTableIndex("7");
         ordTableOrder.setPaymentFlag("1");
         ordTableOrder.setPaymentGroupCode(1);
         ordTableOrder.setOrderDatetime("20241102");
@@ -38,13 +38,18 @@ public class    Main {
         SyncOrdTableOrder syncOrdTableOrder = new SyncOrdTableOrder(dataTableOrderClientCmd, dataTableOrderServerSync, ordTableOrder);
 
         OrdOrderPrint ordOrderPrint = new OrdOrderPrint();
-        ordOrderPrint.setIndex("1");
+        ordOrderPrint.setIndex("20071209");
+        ordOrderPrint.setSaleDate("20241102");
+        ordTableOrder.setOrderUniqueNo(1234);
         ordOrderPrint.setOrderPrint("myname is jiwon kang !");
 
         ArrayList arrayList = new ArrayList();
         OrdKdsDetail ordKdsDetail = new OrdKdsDetail();
-        ordKdsDetail.setIndex("1337");
-        ordKdsDetail.setItemName("jiiiiwooon");
+        ordKdsDetail.setIndex("12091");
+        ordKdsDetail.setItemName("jiwon");
+        ordKdsDetail.setSaleDate("20241102");
+        ordKdsDetail.setCookStatus("01");
+        ordKdsDetail.setOrderSeq(1234);
         arrayList.add(ordKdsDetail);
         try {
             String base64Data = serializeToBase64(syncOrdTableOrder);

@@ -5,7 +5,7 @@ import java.io.Serializable;
 
 public class OrdOrderPrint implements Serializable {
     @Serial
-    private static final long serialVersionUID = 5757778994724569473L;
+    private static final long serialVersionUID = -8620649291086234147L;
     private String createDatetime;
     private String index;
     private String orderPrint;
